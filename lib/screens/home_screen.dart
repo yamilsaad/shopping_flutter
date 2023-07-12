@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/widget.dart';
+import '../layouts/layout.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -16,7 +16,9 @@ class HomeScreen extends StatelessWidget {
         width: double.infinity,
         child: Column(
           children: [
-            SliderWidget(),
+            SliderLayout(),
+            SizedBox(height: 20),
+            RubrosLayout(),
           ],
         ),
       ),
